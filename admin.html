@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" name="" id="url" placeholder="URL">
+    <input type="number" id="price" placeholder="price">
+    <input type="text" id="name" placeholder="name">
+    <button id="button">Submit</button>
+
+    
+</body>
+</html>
+<script>
+
+    document.getElementById("button").addEventListener("click",additems);
+
+    function additems(){
+        let url=document.getElementById("url").value;
+        let price=document.getElementById("price").value;
+        let name=document.getElementById("name").value;
+
+
+        var prod={
+            link:url,
+            pricetag:price,
+            title:name,
+        }
+
+        let prod_details=JSON.parse(localStorage.getItem("products")) || [];
+        prod_details.push(prod);
+        localStorage.setItem("products",JSON.stringify(prod_details));
+    }
+</script>

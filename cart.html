@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/cart.css">
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+    <h1 id="cart_heading"> Cart Items</h1>
+    <div id="main_div">
+        <div id="cart_prod"></div>
+
+
+        <div id="display">
+            
+            <div>
+                <h2>Items:</h2>
+                <h2>Your Total : </h2>
+            </div>
+            <div>
+                <h2 id="quantity"></h2>
+                <h2 id="price"></h2>
+            </div>
+            
+        </div>
+            
+            
+        </div>
+    </div>
+    <button onclick="checkout()" id="checkout">CHECKOUT</button>
+    <div id="footer"></div>
+    
+</body>
+</html>
+
+<script type="module" src="./scripts/header.js"> </script>
+
+
+<script>
+    var cart=JSON.parse(localStorage.getItem("cart"));
+    console.log(cart)
+
+    var cart_prod=document.getElementById('cart_prod')
+
+   var appendData=(cart)=>{
+    cart.forEach(function (el,index){
+        let div=document.createElement('div');
+
+        let img=document.createElement('img');
+        img.src=el.link;
+
+        let h3=document.createElement('h3');
+        h3.innerText=el.title;
+
+        let h4=document.createElement('h4');
+        h4.innerText=el.pricetag;
+        h4.style.color="#c7202c"
+
+        let remove_=document.createElement('button');
+        remove_.textContent="Remove"
+        remove_.id="remove"
+
+        div.append(img,h3,h4,remove_);
+        cart_prod.append(div);
+
+        remove_.addEventListener("click", function(){
+            deletefun(index);
+        });
+
+        
+    })
+   }
+   appendData(cart);
+
+   let qty=cart.length;
+   let s=0;
+   let sum=(cart)=>{
+       cart.forEach(function (el){
+           s=s+(+el.pricetag);
+       })
+     let h3=document.getElementById("quantity"); 
+     h3.innerText=qty;
+
+     let p=document.getElementById('price');
+     p.innerText=s;
+   }
+
+   sum(cart);
+
+   function deletefun(index){
+    cart.splice(index ,1);
+    alert("Item Removed Successfully");
+    console.log(index)
+        localStorage.setItem("cart" ,JSON.stringify(cart));
+        appendData(cart)
+        window.location.href="cart.html";
+   }
+
+   function checkout(){
+       localStorage.setItem("cart",JSON.stringify(null))
+       window.location.href="checkout.html";
+
+   }
+
+</script>

@@ -1,0 +1,100 @@
+*{
+    font-family: sans-serif;
+}
+#bar{
+    height:500px;
+    width:0.1px;
+    background-color: silver;
+    /* border:10px solid black; */
+}
+#contents{
+    display:flex;
+}
+#sign_in{
+    width:300px;
+    /* border:1px solid red; */
+    text-align: left;
+    padding:5%;
+    padding-top: 2%;
+}
+#create_account{
+    width:300px;
+    /* border:1px solid blue; */
+    text-align: left;
+    padding:5%;
+    padding-top: 2%;
+
+}
+#contents{
+    padding:1% 10% 0% 10%;
+    justify-content: center;
+    
+}
+#checkbox{
+    width:285px;
+    background-color: #f9fafc;
+    border:0.2px solid silver;
+    border-radius: 5px;
+    padding:7px 15px 7px 15px;
+}
+#password_box{
+    display:flex;
+    justify-content: space-between;
+}
+#signbtn{
+    background-color: #298861;
+    color:white;
+    font-weight:bolder ;            
+    width:317px;
+    height:44px;
+    border:none;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+#signbtn:hover{
+    background-color:#1d5f44;
+    cursor:pointer;
+}
+#createbtn{
+    background-color: #036994;
+    color:white;
+    font-weight:bolder ;            
+    width:317px;
+    height:44px; 
+    border:none;
+    border-radius: 5px; 
+    margin-top: 25px;
+}
+#createbtn:hover{
+    background-color:#04587c;
+    cursor:pointer;
+}
+.input{
+    width:299px;
+    height:36px;
+    border:0.2px solid silver;
+    padding-left:15px;
+    border-radius: 5px;
+}
+.password_input{
+    height:36px;
+    width:140px;
+    border:0.2px solid silver;
+    border-radius: 5px;
+    padding-left:15px;
+    margin-bottom: 30px;
+
+}
+h3{
+    color:#444444;
+}
+#contents p,label{
+    color:#626669;
+}
+.a{
+    margin-left:80px;
+    color: #0272a2;
+    font-size: small;
+    font-weight: bolder;
+    
+}

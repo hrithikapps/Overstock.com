@@ -1,0 +1,437 @@
+/* #navbar{
+    position:absolute;
+} */
+
+*{
+    font-family: sans-serif;
+}
+#lower_navbar{
+    display:flex;
+    justify-content: space-around;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    padding:0.5%;
+}
+#lower_navbar a{
+    color:black;
+    text-decoration: none;
+    font-size: smaller;
+}
+#drop_1{
+    visibility: hidden;
+    height:fit-content;
+    width:min-content;
+    display:flex;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    float:left;
+    color: rgb(71, 71, 71);
+    position: fixed;
+}
+#drop_1 a:hover{
+    /* visibility:visible; */
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+#drop_1>div{
+    padding:1%;
+    width:230px;
+    line-height: 15px;
+    background-color: rgb(255,255,255);
+}
+#drop_1 a{
+    font-size: smaller;
+    color:#464646;
+    display:block;
+    line-height: 20px;
+    text-decoration: none;
+}
+#drop_2{
+    visibility: hidden;
+    height:fit-content;
+    width:min-content;
+    display:flex;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    float:inline-start;
+    color: rgb(71, 71, 71);
+    position: fixed;
+}
+#drop_2 a:hover{
+    /* visibility:visible; */
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+#drop_2>div{
+    padding:1%;
+    width:230px;
+    line-height: 15px;
+    background-color: rgb(255,255,255);
+}
+#drop_2 a{
+    font-size: smaller;
+    color:#464646;
+    display:block;
+    line-height: 20px;
+    text-decoration: none;
+}
+#drop_3{
+    visibility: hidden;
+    height:fit-content;
+    width:min-content;
+    display:flex;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    float:left;
+    color: rgb(71, 71, 71);
+    position: fixed;
+}
+#drop_3 a:hover{
+    visibility:visible;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+#drop_3>div{
+    padding:1%;
+    width:230px;
+    line-height: 15px;
+    background-color: rgb(255,255,255);
+}
+#drop_3 a{
+    font-size: smaller;
+    color:#464646;
+    display:block;
+    line-height: 20px;
+    text-decoration: none;
+}
+#drop_4{
+    visibility: hidden;
+    height:fit-content;
+    width:min-content;
+    display:flex;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    float:left;
+    color: rgb(71, 71, 71);
+    position: fixed;
+}
+#drop_4 a:hover{
+    visibility:visible;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+#drop_4>div{
+    padding:1%;
+    width:230px;
+    line-height: 15px;
+    background-color: rgb(255,255,255);
+}
+#drop_4 a{
+    font-size: smaller;
+    color:#464646;
+    display:block;
+    line-height: 20px;
+    text-decoration: none;
+}
+#drop_5{
+    visibility: hidden;
+    height:fit-content;
+    width:min-content;
+    display:flex;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    float:left;
+    color: rgb(71, 71, 71);
+    position: fixed;
+}
+#drop_5 a:hover{
+    visibility:visible;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+#drop_5>div{
+    padding:1%;
+    width:230px;
+    line-height: 15px;
+    background-color: rgb(255,255,255);
+}
+#drop_5 a{
+    font-size: smaller;
+    color:#464646;
+    display:block;
+    line-height: 20px;
+    text-decoration: none;
+}
+#drop_6{
+    visibility: hidden;
+    height:fit-content;
+    width:min-content;
+    display:flex;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    float:left;
+    color: rgb(71, 71, 71);
+    position: fixed;
+}
+#drop_6 a:hover{
+    visibility:visible;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+#drop_6>div{
+    padding:1%;
+    width:230px;
+    line-height: 15px;
+    background-color: rgb(255,255,255);
+}
+#drop_6 a{
+    font-size: smaller;
+    color:#464646;
+    display:block;
+    line-height: 20px;
+    text-decoration: none;
+}
+#drop_7{
+    visibility: hidden;
+    height:fit-content;
+    width:min-content;
+    display:flex;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    float:left;
+    color: rgb(71, 71, 71);
+    position: fixed;
+}
+#drop_7 a:hover{
+    visibility:visible;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+#drop_7>div{
+    padding:1%;
+    width:230px;
+    line-height: 15px;
+    background-color: rgb(255,255,255);
+}
+#drop_7 a{
+    font-size: smaller;
+    color:#464646;
+    display:block;
+    line-height: 20px;
+    text-decoration: none;
+}
+#drop_8{
+    visibility: hidden;
+    height:fit-content;
+    width:min-content;
+    display:flex;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    float:left;
+    color: rgb(71, 71, 71);
+    position: fixed;
+}
+#drop_8 a:hover{
+    visibility:visible;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+#drop_8>div{
+    padding:1%;
+    width:230px;
+    line-height: 15px;
+    background-color: rgb(255,255,255);
+}
+#drop_8 a{
+    font-size: smaller;
+    color:#464646;
+    display:block;
+    line-height: 20px;
+    text-decoration: none;
+}
+#drop_9{
+    visibility: hidden;
+    height:fit-content;
+    width:min-content;
+    display:flex;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    float:left;
+    color: rgb(71, 71, 71);
+    position: fixed;
+}
+#drop_9 a:hover{
+    visibility:visible;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+#drop_9>div{
+    padding:1%;
+    width:230px;
+    line-height: 15px;
+    background-color: rgb(255,255,255);
+}
+#drop_9 a{
+    font-size: smaller;
+    color:#464646;
+    display:block;
+    line-height: 20px;
+    text-decoration: none;
+}
+#drop_10{
+    visibility: hidden;
+    height:fit-content;
+    width:min-content;
+    display:flex;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    float:left;
+    color: rgb(71, 71, 71);
+    position: fixed;
+}
+#drop_10 a:hover{
+    visibility:visible;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+#drop_10>div{
+    padding:1%;
+    width:230px;
+    line-height: 15px;
+    background-color: rgb(255,255,255);
+}
+#drop_10 a{
+    font-size: smaller;
+    color:#464646;
+    display:block;
+    line-height: 20px;
+    text-decoration: none;
+}
+#drop_11{
+    visibility: hidden;
+    height:fit-content;
+    width:min-content;
+    display:flex;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    float:left;
+    color: rgb(71, 71, 71);
+    position: fixed;
+}
+#drop_11 a:hover{
+    visibility:visible;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+#drop_11>div{
+    padding:1%;
+    width:230px;
+    line-height: 15px;
+    background-color: rgb(255,255,255);
+}
+#drop_11 a{
+    font-size: smaller;
+    color:#464646;
+    display:block;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+
+#drop_13{
+    visibility: hidden;
+    height:fit-content;
+    width:min-content;
+    display:flex;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    float:right;
+    color: rgb(71, 71, 71);
+    position: fixed;
+}
+#drop_13 a:hover{
+    visibility:visible;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+#drop_13>div{
+    padding:1%;
+    width:230px;
+    line-height: 15px;
+    background-color: rgb(255,255,255);
+}
+#drop_13 a{
+    font-size: smaller;
+    color:#464646;
+    display:block;
+    line-height: 20px;
+    text-decoration: none;
+}
+.center{
+    text-align: center;
+}
+.flex{
+    display:flex;
+}
+
+.bold_letters{
+    font-weight: 700;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+#upper_navbar{
+    display:flex;
+    justify-content: space-around;
+    /* border-top: 1px solid lightgrey; */
+    padding:1.5%;
+}
+#searchbar{
+margin-left: 5%;
+display:flex;
+height:40px;
+width:70%;
+/* border:1px solid black; */
+}
+#logos{
+    display:flex;
+    width:25%;
+    justify-content: space-around;
+    line-height: 0px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+#inputsearch{
+    width:90%;
+    height:36px;
+    margin-top:0px ;
+    font-size: 18px;;
+    margin-right: 0px;
+    /* margin-bottom: 150px; */
+    border:0.2px solid lightgrey;
+}
+.div_img{
+    height:220px;
+    width:230px;
+}
+
+#inputsearch:focus{
+    outline:0.5px solid black;
+}
+#search_btn{
+    margin-left: 0px;
+    background-color: #ff1f2c;
+    border:none;
+    padding: 7px 15px 7px 15px ;
+}
+#inside_upper_navbar{
+    display:flex;
+    height:40px;
+    width:100%;
+    /* border:0.6px solid red; */
+    justify-content: space-around;
+}
+#logos>a{
+    text-decoration: none;
+    color:black;
+}
